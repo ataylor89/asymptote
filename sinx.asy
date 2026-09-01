@@ -1,4 +1,4 @@
-size(300, 300);
+size(200, 200);
 import graph;
 import geometry;
 
@@ -9,12 +9,12 @@ draw((-1.2,0)--(1.2,0), gray);
 draw((0,-1.2)--(0,1.2), gray);
 draw(circle((0,0), 1), linewidth(1bp)+blue);
 draw((0,0)--q--p--cycle, linewidth(1bp)+red);
-markangle("$\theta$", radius=5mm, q, (0, 0), p, fontsize(10pt));
-dot("$(0,0)$", (0,0), SW, fontsize(10pt));
+markangle("$\theta$", radius=5mm, q, (0, 0), p, fontsize(12pt));
+dot("$(0,0)$", (0,0), SW, fontsize(12pt));
 dot(p);
 dot(q);
-label("$sin(\theta)$", (cos(theta), sin(theta)/2), E, fontsize(10pt));
-label("$cos(\theta)$", q/2, S, fontsize(10pt));
-label("$1$", p/2, NW, fontsize(10pt));
-xaxis("$x$", fontsize(10pt), Arrow);
-yaxis("$y$", fontsize(10pt), Arrow);
+label("$sin(\theta)$", (cos(theta), sin(theta)/2), E, fontsize(12pt));
+label("$cos(\theta)$", q/2, S, fontsize(12pt));
+label("$1$", p/2, NW, fontsize(12pt));
+xaxis("$x$", fontsize(12pt), Arrow);
+yaxis("$y$", fontsize(12pt), Arrow);
